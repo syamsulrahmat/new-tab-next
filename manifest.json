@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "New Tab Next",
+  "version": "1.0",
+  "description": "Opens a new tab immediately to the right of the current tab.",
+  "permissions": ["tabs", "tabGroups"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "commands": {
+    "open-tab-next": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+U",
+        "mac": "Command+Shift+U"
+      },
+      "description": "Open a new tab next to current"
+    }
+  }
+}
